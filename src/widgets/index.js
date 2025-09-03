@@ -53,6 +53,7 @@ async function renderLocation(location, data, uid, options, config) {
 }
 
 async function renderWidget({widget, uid, options, config, location}) {
+	console.log('MEGHA JASTI');
 	if (!widget || !widget.data || (!!widget.data['hide-mobile'] && options.req.useragent.isMobile)) {
 		return;
 	}
